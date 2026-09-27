@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rehaan — CS/AI Student Portfolio</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤖</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="#top" class="logo">rehaan@portfolio:~$</a>
+    <ul class="navlinks" id="navlinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#hackathons">Hackathons</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="navtoggle" id="navtoggle" aria-label="Toggle menu">☰</button>
+  </nav>
+</header>
+
+<main class="wrap" id="top">
+
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <div class="kicker">available for internships, 2027</div>
+        <h1>Rehaan builds AI systems that reach people where they already are.</h1>
+        <p class="role">Computer Science (AI/ML) student at SRK Institute of Technology, Vijayawada — building chatbots, recommendation engines, and sentiment tools that ship, not just demo.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#projects">See projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <div class="terminal">
+        <div class="term-bar"><span class="dot r"></span><span class="dot y"></span><span class="dot g"></span></div>
+        <div class="term-body">
+          <div><span class="prompt">$</span> whoami</div>
+          <div class="val">rehaan — B.Tech CSE (AI), 2024–2028</div>
+          <div><span class="prompt">$</span> cat focus.txt</div>
+          <div class="val">applied ML · conversational AI · full-stack</div>
+          <div><span class="prompt">$</span> ls hackathons/ | wc -l</div>
+          <div class="val">7 events entered</div>
+          <div><span class="prompt">$</span> ./run --status</div>
+          <div>building SmartMenu, WealthWise Start<span class="cursor"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-title"><span>01</span> — about</div>
+    <h2>About</h2>
+    <div class="about-text">
+      <p>I'm a Computer Science undergraduate at SRK Institute of Technology, Vijayawada, specializing in Artificial Intelligence and Machine Learning. Most of what I build sits at the intersection of practical software engineering and applied AI — chat interfaces, recommendation systems, and sentiment analysis tools that solve a specific, real problem rather than showcase a model in isolation.</p>
+      <p>Outside coursework, I'm drawn to civic technology — using software for public-interest problems — and I've contributed to a project tied to the Viksit Bharat initiative. I compete regularly in hackathons, which is where most of my projects started as weekend prototypes before becoming something more complete.</p>
+    </div>
+    <div class="lang-row">
+      <span class="pill">English</span>
+      <span class="pill">Hindi</span>
+      <span class="pill">Telugu</span>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="projects">
+    <div class="section-title"><span>02</span> — selected work</div>
+    <h2>Projects</h2>
+    <p style="color:var(--muted); font-size:14px; margin-top:-20px; margin-bottom:8px;">Click any project for the full write-up.</p>
+
+    <a class="project-link" href="projects/smartmenu.html">
+      <div class="project">
+        <div class="project-thumb"><img src="assets/img/smartmenu.png" alt="SmartMenu app screenshot"></div>
+        <div>
+          <h3>SmartMenu</h3>
+          <p>A full-stack React application, rebuilt from scratch on Vite after an earlier AI-generated version broke down, that recommends Indian dishes by mood and wellness goals. It filters against dietary preferences, allergies, and even weather, drawing on a regional cuisine dataset.</p>
+          <div class="tags"><span class="tag">React</span><span class="tag">Vite</span><span class="tag">localStorage auth</span></div>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+    </a>
+
+    <a class="project-link" href="projects/wealthwise.html">
+      <div class="project">
+        <div class="project-thumb"><img src="assets/img/wealthwise.png" alt="WealthWise Start app screenshot"></div>
+        <div>
+          <h3>WealthWise Start</h3>
+          <p>A gamified financial-literacy platform for students, teaching budgeting and saving through interactive lessons, games, quizzes, and a level-and-streak reward system.</p>
+          <div class="tags"><span class="tag">Gamification</span><span class="tag">EdTech</span></div>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+    </a>
+
+    <a class="project-link" href="projects/astrolink.html">
+      <div class="project">
+        <div class="project-thumb"><img src="assets/img/astro-mission.png" alt="Astronaut Mission Control app screenshot"></div>
+        <div>
+          <h3>AstroLink</h3>
+          <p>A platform for astronauts to plan daily routines, design their habitat, and stay connected with family through real-time chat during a mission.</p>
+          <div class="tags"><span class="tag">Real-time chat</span><span class="tag">Scheduling</span></div>
+        </div>
+        <div class="project-arrow">→</div>
+      </div>
+    </a>
+  </section>
+
+  <hr class="divider">
+
+  <section id="skills">
+    <div class="section-title"><span>03</span> — toolbox</div>
+    <h2>Skills</h2>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h4>AI / ML</h4>
+        <div class="tags">
+          <span class="tag">Hugging Face</span>
+          <span class="tag">OpenAI API</span>
+          <span class="tag">Azure Cognitive Services</span>
+          <span class="tag">Generative AI</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Backend</h4>
+        <div class="tags">
+          <span class="tag">Flask</span>
+          <span class="tag">Firebase</span>
+          <span class="tag">Twilio</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Frontend</h4>
+        <div class="tags">
+          <span class="tag">React</span>
+          <span class="tag">Vite</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Languages</h4>
+        <div class="tags">
+          <span class="tag">Python</span>
+          <span class="tag">JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section id="hackathons">
+    <div class="section-title"><span>04</span> — track record</div>
+    <h2>Hackathons</h2>
+    <div class="timeline">
+      <div class="t-item"><h4>NASA International Space Apps Challenge</h4><div class="t-meta">2025</div></div>
+      <div class="t-item"><h4>Adobe India Hackathon</h4><div class="t-meta">Round 1 qualifier</div></div>
+      <div class="t-item"><h4>AI Agent Hackathon</h4><div class="t-meta">Hosted by Product Space</div></div>
+      <div class="t-item"><h4>D3 Rewind &amp; Recode</h4><div class="t-meta">VIT-AP</div></div>
+      <div class="t-item"><h4>Utkarsh 2025 HackSprint</h4><div class="t-meta">IETE</div></div>
+      <div class="t-item"><h4>Tutedude Web Development Hackathon</h4><div class="t-meta"></div></div>
+      <div class="t-item"><h4>Hack the Web Challenge</h4><div class="t-meta"></div></div>
+    </div>
+
+    <h2 style="margin-top:56px;">Certifications</h2>
+    <ul class="cert-list">
+      <li><span>AI Skills Passport</span><span class="c-meta">EY &amp; Microsoft</span></li>
+      <li><span>Multi-Modal Generative AI</span><span class="c-meta">Tuitionsforu, Feb 2026</span></li>
+      <li><span>Advanced Web Development</span><span class="c-meta"></span></li>
+      <li><span>Python Essentials 1</span><span class="c-meta"></span></li>
+    </ul>
+  </section>
+
+  <hr class="divider">
+
+  <section id="contact" class="contact">
+    <div class="section-title"><span>05</span> — reach out</div>
+    <h2>Let's talk</h2>
+    <p class="about-text">Looking for an intern who can move between AI experimentation and shipped product? I'd like to hear from you.</p>
+    <div class="contact-links">
+      <a href="mailto:youremail@example.com">Email</a>
+      <a href="https://github.com/MohammadRehaan6" target="_blank" rel="noopener">GitHub</a>
+      <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <div>© <span id="year"></span> Rehaan — built with HTML, CSS &amp; a terminal habit.</div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const toggle = document.getElementById('navtoggle');
+  const links = document.getElementById('navlinks');
+  toggle.addEventListener('click', () => links.classList.toggle('open'));
+  links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+</script>
+
+</body>
+</html>
